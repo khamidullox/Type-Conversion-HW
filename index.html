@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type o'zgarishi </title>
+    <style>
+     *{
+        padding: 0;
+        margin: 0;
+        margin-left: 5px ;
+     }
+     code{
+            background-color: bisque;
+            color: rgb(43, 125, 197);
+        }
+        h1{
+            color: cornflowerblue;
+            margin-bottom: 5px;
+        }
+     li{
+        margin-left: 25px;
+     }
+     p{
+        font-weight: 600;
+        color: darkblue;
+     }
+    </style>
+</head>
+<body>
+<h1>Type Conversion</h1>
+<p>Berilgan malumot turinin ozgartirishta qolaniladi</p>
+<h2>Misol</h2>
+<p>
+    <code>const yil = '2024';// string</code><br>
+   <code> console.log(yil); // string </code><br>
+   <code>console.log(Number(yil));// Number</code>
+ </p>
+ <br>
+ <p>
+    <code>console.log(yil+1); // 20241 (concatenation)</code><br>
+    <code>console.log(Number(yil)+1); // 2025</code><br>
+ </p>
+ <br>
+ <p>
+    <code>const ism = 'Hamidullo';</code><br>
+    <code>console.log(Number(ism));// NaN</code><br>
+ </p>
+ <br><br>
+ <h1>Type coercion</h1>
+ <p>JS avtomatic tarzda malumotni string yoki numberga ozgartirib oladi</p>
+ <h2>Misol</h2>
+ 
+ <p>
+
+    <code>console.log('Men' + 2006 + 'chi yilda tugilganman'); </code> <br>
+    <code>console.log('30' + '50' -10);</code>
+ </p><br>
+<h1>Trouthy va Falsy</h1>
+<p>Boolean orkali qiymatlar truthy va falsy shaklida chiqadi </p>
+<br>
+<h2>Falsy Korinishiga keladigan qiymatlar  (Data Typeslar assosan )</h2>
+
+<ul>
+    <li>false <br> <code>console.log(Boolean(false))</code></li>
+    <li>0 <br><code>console.log(Boolean(0))</code></li>
+    <li>'' <br>  <code>console.log(Boolean(''))</code></li>
+    <li>undefined <br>  <code>console.log(Boolean(undefined))</code></li>
+    <li>null <br> <code>console.log(Boolean(null))</code></li>
+    <li>NaN <br> <code>console.log(Boolean(NaN))</code></li>
+    <li>0n <br> <code>console.log(Boolean(0n))</code></li>
+</ul>
+<p>Qolgan qiymatlar truthy qolda keladi</p>
+    <script src="/app.js"></script>
+</body>
+</html>
